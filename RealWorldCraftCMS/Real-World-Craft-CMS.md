@@ -63,9 +63,11 @@
 - Entries > Singles > Homepage
   - Here we see all the new Field and labels we just created
   - Fill out the three with Image, Headline and Tagline and Save
+
     <br>
 
 <h2>Creating a Channel Section and Fields (Matrix & Content Builder)</h2>
+
 - Creating a few standalone fields and then a Matrix Field to create a Content Builder to afford further customization of page layout
 - Demonstrates Flexible Field Layout via using a Matrix Field to create a Content Builder
   - Each block of the Matrix Field would become one of the available content types.
@@ -121,9 +123,11 @@
 - Entries > Adventures > New Entry - Big Bend Bounce
   ![](Adventures-newEntryDemo.png)
   - Also add images and hit save
+
     <br>
 
 <h2>Creating About and FAQs Singles</h2>
+
 - Make about.twig and faqs.twig in cms > templates
 - Settings > Sections > New Section - About and FAQs (both Type: Single)
   - (Site Settings: URI - about | Template - about.twig | Section Type - single)
@@ -136,15 +140,19 @@
           - Group* - Common | Label* - Rich Text | Handle* - richText | Field Type - redactor
           - Entries > Singles > FAQs
             ![](Field-Label-assign.png)
+
             <br>
 
 <h2>Preview Targets in Craft CMS</h2>
+
 - In Craft CMS Pro edition, we have the option of using one or more preview targets. 
   - These are URLs to templates that content authors use to preview the content in the site designs and layouts.
   ![](Adventures-previewTargets.png)
+
 <br>
 
 <h2>Creating Categories and Field Layouts</h2>
+
  - Because "Adventures" are entries and each Adventure takes place at a Location: (Adventures - Channel Section)
    - cms > templates > locations > _category.twig & index.twig
    - Settings > Categories > New Category Group - Locations (Locations - Category Section)
@@ -175,6 +183,7 @@
 <br>
 
 <h2>Coding a Single Section in Craft and Twig</h2>
+
 - Homepage is a single, therefore, We get the entry data automatically via the 'entry' object (same for individual entry views)
 - Since we already added mark up earlier we can add the title dynamically by replacing the title copy with 
   - {{ entry.title }} and add headline dynamically by replacing headline copy with {{ entry.headline }}
@@ -189,8 +198,8 @@
           </span>
        {% endfor %}
        ~~~
-- Replacing Image<br>
-  `<img src="{{ entry.image.one.url }}" alt="{{ entry.title }}">`
+- Replacing Image
+  >`<img src="{{ entry.image.one.url }}" alt="{{ entry.title }}">`
     - .one gets only 1 img even if only one image available
     - .url gets public url to single image
 - Next Iterate over Homepage's Adventures in adventures section on index.twig
@@ -213,9 +222,11 @@
         </ul>  
      {% endfor %}
      ~~~
+
 <br>
 
 <h2>Creating and Extending a Layout in Twig</h2>
+
 ![](indexTwig-noExtend.png)
 - cms > templates > _layouts (new) > _wrapper.twig (new)
   ![](_wrapperTwig.png)
@@ -225,6 +236,7 @@
 <br>
 
 <h2>Testimonials Channel Section</h2>
+
 - Create and configure a channel section for testimonials
 - Create Fields testimonial(Plain Text), Author & Location (Byline - Table)
 - Add twig code to home page that outputs **Random** testimonials
@@ -263,9 +275,11 @@
       --- Code ---
     </div>
   ~~~
+
 <br>
 
 <h2>Coding a Twig Entry Template</h2>
+
 - adventures/_entry.twig
 - Compose adventures Entry twig that uses a switch case to handle different block types within content builder matrix
 ![](Adventures-newEntryDemo.png)
@@ -357,9 +371,11 @@
                     </div>
                     {# End Content #}
 ~~~
+
 <br>
 
 <h2>Image Transforms & Eager Loading</h2>
+
 - **EAGER LOADING** - Used to prevent "n+1 issues" that can occur when loading images during an element query and for-loop
   - Eager loading images *and their transforms* prevents this 
   - In Craft4, all eager-loaded elements are returned as collections instead of standard data arrays.
@@ -443,6 +459,7 @@
 <br>
 
 <h2>Refactoring to Shared Templates</h2>
+
 - Abstracting code out and inserting into a shared template that can then be *included* using twig includes
 - cms > templates > _shared (new) > _adventures-listing.twig (new)
   - all adventures listing code moved from index into this new twig file.  
@@ -514,6 +531,7 @@
 <br>
 
 <h2>Flexible Category Templates</h2>
+
 - Demonstrate Craft's flexibility by building out our Location page
 - cms > templates> locations > _category.twig 
   - Display information about the location, Adventures *located at the location*, and other locations *excluding the current location*
