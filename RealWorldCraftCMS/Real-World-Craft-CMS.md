@@ -4,7 +4,7 @@
 <br>
 
 <h2>Setting up the Craft CMS Project</h2>
- - Get docker Desktop running
+ * Get docker Desktop running
    - git clone git@github.com:YourAccount/your-repository-name.git
  - Project users 'make' commands to bundle up the various commands used to start, stop, and do other things in the project
    - start project localy by using 'make dev'
