@@ -1,11 +1,14 @@
 <h1>Real World Craft CMS</h1>
+
  - Dev Tip: Click CMS Profile button Preferences > Scroll to Development
     - Show Field Handles in Edit Forms
+
 <br>
 
 <h2>Setting up the Craft CMS Project</h2>
- * Get docker Desktop running
- * git clone git@github.com:YourAccount/your-repository-name.git
+
+ - Get docker Desktop running
+ - git clone git@github.com:YourAccount/your-repository-name.git
  - Project users 'make' commands to bundle up the various commands used to start, stop, and do other things in the project
    - start project localy by using 'make dev'
      - runs a series of commands, including 'docker-compose up'
@@ -16,13 +19,17 @@
  - Testing the project
    - In the 'index.html' template, copy everything inside and including the 'body' tag, and then paste it in to the 'index.twig' in the starter project, replacing the 'body' section.
    - We’ll need to update some image paths to be 'img/site/' instead of the defaults in the static template.
+
 <br>
 
 <h2>Content Modeling the Homepage</h2>
+
 - create an md file just like this and model the content ('trail-quest/content-model.md)
+
   <br>
 
 <h2>Creating a Single Section and Fields</h2>
+
 - We implement our initial content model by creating a Single section for the site homepage.
 - Demonstrates Strict Field layout that precicley matches template (One Field per content type)
 - Settings > Sections > Create new section
