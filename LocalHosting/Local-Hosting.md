@@ -1,6 +1,7 @@
 <h1>Local Hosting</h1>
 
 <h2>Craft Valet</h2>
+
 - Dev environment for mac minimalists
 - webserver that runs engineX handles all host files and dns locally on your machine
 - php mysql and all that neeeds installed
@@ -10,6 +11,7 @@
   - install valet - composer global require laravel/valet
 
 <h2>Now make project and link valet</h2>
+
 ~~~
     mkdir 'mysite'
     cd mysite/
