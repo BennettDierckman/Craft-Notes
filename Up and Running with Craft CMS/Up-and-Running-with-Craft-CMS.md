@@ -59,6 +59,7 @@
           - ls -al
 
 <h2>Running Craft CMS Setup in the Browser</h2>
+
 - .env file
   - environment file, specific to each environment (local, staging, production)
     - ex - DB connection info

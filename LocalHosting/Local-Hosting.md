@@ -23,7 +23,8 @@
     valet domain dev     (valet domain from .test to .dev)
 ~~~
 
-<h2You are now ready to install craft!</h2>
+<h2>You are now ready to install craft!</h2>
+
  - Go to Up-and-Running-with-Craft.md   
    - installing craft with composer
 
